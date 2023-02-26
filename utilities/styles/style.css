@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.bg-chaorcal-cl {
+  background-color: #101820;
+}
+
+.text-yellow,
+.text-yellow:hover {
+  color: #fee715;
+}
+
+@keyframes growDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sidebar {
+  width: 19rem;
+}
+.sidebar .sidebar-arrow {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.sidebar .sidebar-arrow:hover {
+  color: #fee715;
+}
+.sidebar .sidebar-menu {
+  list-style-type: none;
+}
+.sidebar .sidebar-menu .sidebar-menu-item a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #fee715;
+  padding: 0.75rem 0.75rem;
+  transition: all 0.3s;
+  border-radius: 0.3rem;
+}
+.sidebar .sidebar-menu .sidebar-menu-item a:hover {
+  background-color: rgb(26, 35, 41);
+}
+.sidebar .sidebar-menu .sidebar-menu-item a .menu-item-icon {
+  margin: 0 0.7rem 0 0;
+  font-size: 1.25rem;
+}
+.sidebar .sidebar-menu .sidebar-menu-item.active a {
+  background-color: #fee715;
+  color: #101820;
+}
+.sidebar .sidebar-menu .sidebar-menu-divider {
+  font-size: 0.85rem;
+}
+.sidebar .sidebar-menu .sidebar-dropdown-menu {
+  padding: 0 0 0 2rem;
+  animation: growDown 300ms ease-in-out forwards;
+}
+.sidebar .sidebar-menu .sidebar-dropdown-menu .sidebar-dropdown-menu-item a {
+  padding: 0.5rem 0.75rem;
+}
+.sidebar .sidebar-menu .sidebar-dropdown-menu.show {
+  display: block;
+  transition: height 0.3s ease-in;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+}

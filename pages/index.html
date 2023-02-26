@@ -23,23 +23,159 @@
   </head>
   <body>
     <!--? SIDEBAR | start -->
-    <div class="sidebar position-fixed top-0 bottom-0 bg-white border-end">
+    <div class="sidebar position-fixed top-0 bottom-0 bg-chaorcal-cl">
       <!--! admin_text  -->
       <div class="d-flex align-items-center p-3 admin_text m-2">
         <a
           href="#"
-          class="sidebar-logo fw-bold text-decoration-none text-indigo fs-4 m-2"
-          >Admin Panel</a
-        ><i class="fa-solid fa-circle-arrow-left fs-5"></i>
+          class="sidebar-logo fw-bold text-decoration-none text-indigo fs-4 m-2 text-yellow"
+        >
+          Admin Panel
+        </a>
+        <i class="sidebar-arrow fa-regular fa-circle-left fs-5 ms-auto"></i>
       </div>
       <!--! admin_text -->
 
       <!--! side_bar_menu -->
       <div class="sidebar-menu p-3 m-0">
         <li class="sidebar-menu-item active">
-          <a href="#" class="text-decoration-none"
-            ><i class="fa-solid fa-table-columns"></i>Dashboard</a
-          >
+          <a href="#" class="text-decoration-none">
+            <i class="fa-solid fa-table-columns menu-item-icon"></i>
+            Dashboard
+          </a>
+        </li>
+
+        <!--* DIVIDER -->
+        <li class="sidebar-menu-divider text-uppercase mt-3 mb-1 text-yellow">
+          Management
+        </li>
+        <!--* DIVIDER -->
+
+        <li class="sidebar-menu-item has-dropdown">
+          <a href="#" class="text-decoration-none">
+            <i class="fa-solid fa-cart-shopping menu-item-icon"></i>
+            Product Management
+            <i class="fa-solid fa-angle-down ms-auto right-arrow"></i>
+          </a>
+
+          <!--* DROPDOWN -->
+          <ul class="sidebar-dropdown-menu">
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#">
+                <i class="fa-solid fa-cart-plus menu-item-icon"></i>
+                Add Product
+              </a>
+              <!-- ! add new products to the website by entering relevant product information  -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-pen-to-square menu-item-icon"></i>Edit
+                Product
+              </a>
+              <!-- ! product name, description, pricing, images, categories, size, color, and other product variations -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-boxes-stacked menu-item-icon"></i>Manage
+                Inventory
+              </a>
+              <!-- ! quantity of products available for sale, setting low stock alerts, and viewing inventory reports -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-flag menu-item-icon"></i>Sales reports
+              </a>
+              <!-- ! view sales reports to monitor the performance of products and identify the best-selling products on the website -->
+            </li>
+          </ul>
+          <!--* DROPDOWN -->
+        </li>
+
+        <li class="sidebar-menu-item has-dropdown">
+          <a href="#" class="text-decoration-none">
+            <i class="fa-solid fa-box-archive menu-item-icon"></i>
+            Order Management
+            <i class="fa-solid fa-angle-down ms-auto right-arrow"></i>
+          </a>
+
+          <!--* DROPDOWN -->
+          <ul class="sidebar-dropdown-menu">
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#">
+                <i class="fa-solid fa-cart-plus menu-item-icon"></i>
+                Order Processing
+              </a>
+              <!-- ! view and manage incoming orders, including the ability to update order status, process payments, and print packing slips and shipping labels, track the status of orders in real-time and provide customers with information on the estimated delivery date and tracking number -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-pen-to-square menu-item-icon"></i>Edit
+                Customer Notifications
+              </a>
+              <!-- ! send automated email notifications to customers at different stages of the order fulfillment process, such as when an order is received, shipped, or delivered -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-boxes-stacked menu-item-icon"></i>
+                Returns and Refunds
+              </a>
+              <!-- ! manage the returns and refund process, including the ability to process returns, issue refunds, and track inventory -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-boxes-stacked menu-item-icon"></i>
+                Order history
+              </a>
+              <!-- ! view a history of past orders, including details such as the customer's name, order date, items purchased, and payment and shipping information -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-flag menu-item-icon"></i>Order Reports
+              </a>
+              <!-- ! access to reports that show order volume, revenue, and other metrics to help with forecasting and planning -->
+            </li>
+          </ul>
+          <!--* DROPDOWN -->
+        </li>
+
+        <li class="sidebar-menu-item has-dropdown">
+          <a href="#" class="text-decoration-none">
+            <i class="fa-solid fa-cart-shopping menu-item-icon"></i>
+            Product Management
+            <i class="fa-solid fa-angle-down ms-auto right-arrow"></i>
+          </a>
+
+          <!--* DROPDOWN -->
+          <ul class="sidebar-dropdown-menu">
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#">
+                <i class="fa-solid fa-cart-plus menu-item-icon"></i>
+                Add Product
+              </a>
+              <!-- ! add new products to the website by entering relevant product information  -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-pen-to-square menu-item-icon"></i>Edit
+                Product
+              </a>
+              <!-- ! product name, description, pricing, images, categories, size, color, and other product variations -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-boxes-stacked menu-item-icon"></i>Manage
+                Inventory
+              </a>
+              <!-- ! quantity of products available for sale, setting low stock alerts, and viewing inventory reports -->
+            </li>
+            <li class="sidebar-dropdown-menu-item">
+              <a href="#"
+                ><i class="fa-solid fa-flag menu-item-icon"></i>Sales reports
+              </a>
+              <!-- ! view sales reports to monitor the performance of products and identify the best-selling products on the website -->
+            </li>
+          </ul>
+          <!--* DROPDOWN -->
         </li>
       </div>
       <!--! side_bar_menu -->
@@ -47,9 +183,9 @@
     <!--? SIDEBAR | end -->
 
     <!-- start: JS -->
-    <script src="../assets/js/jquery.min.js"></script>
-    <script src="../assets/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/jquery.min.js"></script>
+    <script src="../utilities/js/index.js"></script>
     <!-- end: JS -->
   </body>
 </html>
