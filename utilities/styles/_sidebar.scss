@@ -75,7 +75,7 @@
           $bs-indigo
         );
         color: #101820ff;
-        border-radius: 3rem;
+        border-radius: 5rem;
       }
 
       & a {
@@ -90,6 +90,7 @@
         //   gap: 1rem;
         > &:hover {
           background-color: rgb(26, 35, 41);
+          // border-radius: 5rem;
         }
 
         .menu-item-icon {

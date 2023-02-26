@@ -58,7 +58,7 @@
 .sidebar .sidebar-menu .sidebar-menu-item.focused > a {
   background-image: linear-gradient(to bottom right, #0dcaf0, #6610f2);
   color: #101820;
-  border-radius: 3rem;
+  border-radius: 5rem;
 }
 .sidebar .sidebar-menu .sidebar-menu-item a {
   text-decoration: none;
