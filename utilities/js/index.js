@@ -18,3 +18,16 @@
 //       `;
 //     });
 //   });
+
+$(document).ready(function () {
+  // SIDEBAR
+  $(".sidebar-dropdown-menu").slideUp("fast");
+  $(".sidebar-menu-item.has-dropdown > a").click(function (e) {
+    e.preventDefault();
+
+    $(this).next().slideToggle("fast");
+    $(this).parent().toggleClass("focused");
+  });
+
+  // SIDEBAR
+});
