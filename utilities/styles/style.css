@@ -22,9 +22,12 @@
   width: 22rem;
   overflow-y: scroll;
 }
+.sidebar.collapsed {
+  width: 5rem;
+}
 .sidebar::-webkit-scrollbar {
   background-color: rgb(11, 18, 24);
-  width: 12px;
+  width: 8px;
   border-radius: 10px;
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -55,6 +58,7 @@
 .sidebar .sidebar-menu .sidebar-menu-item.focused > a {
   background-image: linear-gradient(to bottom right, #0dcaf0, #6610f2);
   color: #101820;
+  border-radius: 3rem;
 }
 .sidebar .sidebar-menu .sidebar-menu-item a {
   text-decoration: none;
@@ -75,13 +79,19 @@
   width: 1.3rem;
   text-align: center;
 }
-.sidebar .sidebar-menu .sidebar-menu-item.focused > a {
+.sidebar .sidebar-menu .sidebar-menu-item a .right-arrow {
+  transform: rotateZ(270deg);
+}
+.sidebar .sidebar-menu .sidebar-menu-item .focused > a {
   color: #101820;
   transition: all 0.3s;
 }
 .sidebar .sidebar-menu .sidebar-menu-item.active a {
   background-image: linear-gradient(to bottom right, #0dcaf0, #6610f2);
   color: #101820;
+}
+.sidebar .sidebar-menu .sidebar-menu-item > a {
+  overflow: hidden;
 }
 .sidebar .sidebar-menu hr {
   height: 2px;
@@ -98,6 +108,13 @@
 .sidebar .sidebar-menu .sidebar-dropdown-menu.show {
   display: block;
   transition: height 0.3s ease-in;
+}
+.sidebar .sidebar-menu .sidebar-menu-item.focused > a .right-arrow {
+  transform: rotateZ(360deg);
+  transition: ease-in-out all 0.15s;
+}
+.sidebar.collapsed.admin_text.sidebar-logo {
+  display: none;
 }
 
 * {

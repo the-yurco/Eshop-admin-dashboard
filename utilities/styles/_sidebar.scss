@@ -25,9 +25,13 @@
   width: 22rem;
   overflow-y: scroll;
 
+  &.collapsed {
+    width: 5rem;
+  }
+
   &::-webkit-scrollbar {
     background-color: rgb(11, 18, 24);
-    width: 12px;
+    width: 8px;
     border-radius: 10px;
     transition: all 1s;
   }
@@ -71,6 +75,7 @@
           $bs-indigo
         );
         color: #101820ff;
+        border-radius: 3rem;
       }
 
       & a {
@@ -92,13 +97,15 @@
           font-size: 1.25rem;
           width: 1.3rem;
           text-align: center;
+          // transform: rotateZ(180deg);
         }
 
         .right-arrow {
+          transform: rotateZ(270deg);
         }
       }
 
-      &.focused > a {
+      .focused > a {
         color: #101820ff;
         transition: all 0.3s;
       }
@@ -113,6 +120,10 @@
 
         &:hover {
         }
+      }
+
+      & > a {
+        overflow: hidden;
       }
     }
 
@@ -138,6 +149,15 @@
         transition: height 0.3s ease-in;
       }
     }
+
+    .sidebar-menu-item.focused > a .right-arrow {
+      transform: rotateZ(360deg);
+      transition: ease-in-out all 0.15s;
+    }
+  }
+
+  &.collapsed.admin_text.sidebar-logo {
+    display: none;
   }
 }
 //! SIDEBAR end //

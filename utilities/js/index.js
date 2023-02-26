@@ -1,33 +1,40 @@
-// // SIDEBAR
-// document
-//   .querySelectorAll(".sidebar-dropdown-menu")
-//   .forEach((menu) => (menu.style.display = "none"));
-// document
-//   .querySelectorAll(".sidebar-menu-item.has-dropdown > a")
-//   .forEach((item) => {
-//     item.addEventListener("click", (e) => {
-//       e.preventDefault();
-//       //   item.nextElementSibling.style.transition = "all 0.3s ease-in";
-//       item.nextElementSibling.style.display =
-//         item.nextElementSibling.style.cssText = `
-//         display: ${
-//           item.nextElementSibling.style.display === "block" ? "none" : "block"
-//         };
-//         transition: all 0.3s ease-in;
-//         animation: growDown 300ms ease-in-out forwards;
-//       `;
-//     });
-//   });
-
-$(document).ready(function () {
+document.addEventListener("DOMContentLoaded", function () {
   // SIDEBAR
-  $(".sidebar-dropdown-menu").slideUp("fast");
-  $(".sidebar-menu-item.has-dropdown > a").click(function (e) {
-    e.preventDefault();
+  var dropdownMenus = document.querySelectorAll(".sidebar-dropdown-menu");
+  var menuItems = document.querySelectorAll(
+    ".sidebar-menu-item.has-dropdown > a"
+  );
 
-    $(this).next().slideToggle("fast");
-    $(this).parent().toggleClass("focused");
-  });
+  for (var i = 0; i < dropdownMenus.length; i++) {
+    dropdownMenus[i].style.display = "none";
+  }
+
+  for (var i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener("click", function (e) {
+      e.preventDefault();
+
+      var menuItem = this.parentNode;
+
+      if (!menuItem.classList.contains("focused")) {
+        var parent = menuItem.parentNode;
+        var dropdownMenus = parent.querySelectorAll(".sidebar-dropdown-menu");
+        var dropdownItems = parent.querySelectorAll(".has-dropdown");
+
+        for (var j = 0; j < dropdownMenus.length; j++) {
+          dropdownMenus[j].style.display = "none";
+        }
+
+        for (var j = 0; j < dropdownItems.length; j++) {
+          dropdownItems[j].classList.remove("focused");
+        }
+      }
+
+      var dropdownMenu = this.nextElementSibling;
+      dropdownMenu.style.display =
+        dropdownMenu.style.display === "block" ? "none" : "block";
+      menuItem.classList.toggle("focused");
+    });
+  }
 
   // SIDEBAR
 });
