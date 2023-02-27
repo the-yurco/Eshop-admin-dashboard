@@ -24,9 +24,126 @@
 .sidebar {
   width: 22rem;
   overflow-y: scroll;
+  transition: 0.2s;
 
   &.collapsed {
-    width: 5rem;
+    width: 4.8rem;
+    overflow-x: hidden;
+
+    &:hover {
+      width: 22rem;
+      overflow-y: scroll;
+
+      .sidebar-dropdown-menu {
+        // display: none;
+        padding: 0 0 0 2rem;
+        animation: growDown 300ms ease-in-out forwards;
+
+        .sidebar-dropdown-menu-item {
+          & a {
+            position: relative;
+            right: -0.5rem;
+            transition: 0.3s;
+            inline-size: 17.5rem;
+          }
+        }
+      }
+    }
+
+    &:hover .admin_text {
+      display: block;
+      inline-size: 1000px;
+      // overflow: hidden;
+    }
+
+    .admin_text a {
+      display: none;
+      inline-size: 15rem;
+      overflow: hidden;
+    }
+
+    .sidebar-menu li {
+      &:nth-child(3) a i {
+        position: relative;
+        right: 2px;
+        // padding: 0 2px 0 0;
+      }
+
+      &:nth-child(4) a i {
+        position: relative;
+        right: 1px;
+        // padding: 0 2px 0 0;
+      }
+
+      &:nth-child(6) a i {
+        position: relative;
+        right: 1px;
+        // padding: 0 2px 0 0;
+      }
+
+      &:nth-child(7) a i {
+        position: relative;
+        right: 1px;
+        // padding: 0 2px 0 0;
+      }
+
+      &:nth-child(9) a i {
+        position: relative;
+        right: 1px;
+        // padding: 0 2px 0 0;
+      }
+
+      a {
+        display: flex;
+        gap: 1rem;
+        // text-align: center;
+        // height: 19rem;
+        height: 3rem;
+        // display: none;
+        inline-size: 20rem;
+        overflow: hidden;
+        // inline-size: 20rem;
+
+        i {
+          height: 2rem;
+          text-align: center;
+          width: 2rem;
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          justify-self: center;
+          align-self: center;
+          // margin: 0 50px 0 0;
+        }
+
+        // &:nth-child(1) {
+        //   position: relative;
+        //   right: 3px;
+        // }
+      }
+
+      ul {
+        // inline-size: 15rem;
+        li {
+          // inline-size: 15rem;
+          a {
+            inline-size: 18rem;
+            position: relative;
+            right: 2rem;
+          }
+        }
+      }
+    }
+
+    &:hover .sidebar-arrow {
+      margin-left: auto;
+      margin-right: 0;
+    }
+    .sidebar-arrow {
+      margin: 0 auto;
+      transition: 0.2s;
+    }
   }
 
   &::-webkit-scrollbar {
@@ -87,6 +204,8 @@
         transition: all 0.3s;
         border-radius: 0.3rem;
         margin: 0.5rem 0;
+        // flex-wrap: nowrap;
+        // position: absolute;
         //   gap: 1rem;
         > &:hover {
           background-color: rgb(26, 35, 41);
@@ -142,6 +261,9 @@
         & a {
           padding: 0.5rem 0.75rem;
           color: rgb(226, 226, 226);
+          position: relative;
+          // right: -2rem;
+          transition: 0.3s;
         }
       }
 
@@ -159,6 +281,8 @@
 
   &.collapsed.admin_text.sidebar-logo {
     display: none;
+    inline-size: 1000px;
+    overflow: hidden;
   }
 }
 //! SIDEBAR end //
