@@ -25,7 +25,7 @@
   transition: 0.2s;
 }
 .sidebar.collapsed {
-  width: 4.8rem;
+  width: 4.7rem;
   overflow-x: hidden;
 }
 .sidebar.collapsed:hover {
@@ -215,7 +215,7 @@
   border-width: 2px;
   border-image-source: linear-gradient(to left, #6610f2, #0d6efd);
   background-color: rgb(10, 16, 22);
-  width: 96%;
+  width: 96.1%;
   float: right;
   display: flex;
   justify-content: space-between;
@@ -299,7 +299,6 @@
   border: none;
 }
 .main-dashboard-page .container .news .card {
-  height: 10rem;
   margin: 0 0 25px 0;
   border: none;
   border-radius: 0.6;
@@ -337,6 +336,39 @@
   display: block;
   height: 30px;
   width: 30px;
+}
+.main-dashboard-page .container .graph {
+  border: none;
+  background-color: rgb(10, 16, 22);
+}
+.main-dashboard-page .container .graph .graph-picture {
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+}
+.main-dashboard-page .container .company-team .card {
+  height: 15rem;
+  background-color: rgb(10, 16, 22);
+}
+.main-dashboard-page .container .company-team .card img {
+  width: 40%;
+  margin: 0 0 3rem 0;
+  border: 1px solid white;
+  padding: 7px;
+  border-radius: 50rem;
+  text-align: center;
+}
+.main-dashboard-page .container .company-team .card h5 {
+  font-size: 1.1rem;
+}
+.main-dashboard-page .container .company-team .card p {
+  font-size: 0.8rem;
+}
+.main-dashboard-page .container .activity {
+  border: none;
+}
+.main-dashboard-page .container .activity .card-body {
+  background-color: rgb(10, 16, 22);
 }
 
 * {
