@@ -364,11 +364,58 @@
 .main-dashboard-page .container .company-team .card p {
   font-size: 0.8rem;
 }
-.main-dashboard-page .container .activity {
+.main-dashboard-page .container .customers-activity {
   border: none;
 }
-.main-dashboard-page .container .activity .card-body {
+.main-dashboard-page .container .customers-activity .card {
+  border: none;
   background-color: rgb(10, 16, 22);
+}
+.main-dashboard-page .container .customers-activity .card-body {
+  background-color: rgb(10, 16, 22);
+  border-radius: 0.5rem;
+}
+.main-dashboard-page .container .customers-activity .card-body img {
+  height: 30px;
+}
+.main-dashboard-page .container .customers-activity .card-body table {
+  height: 25rem;
+}
+.main-dashboard-page .container .customers-activity .card-body tr {
+  color: white;
+}
+.main-dashboard-page .container .customers-activity .card-body td img {
+  height: 30px;
+}
+.main-dashboard-page .container .links .card {
+  background-color: rgb(10, 16, 22);
+  color: white;
+}
+.main-dashboard-page .container .links .social-graph-wrapper.widget-facebook {
+  background-color: #3b5998;
+}
+.main-dashboard-page .container .links .social-graph-wrapper.widget-linkedin {
+  background-color: #007bb6;
+}
+.main-dashboard-page .container .links .social-graph-wrapper.widget-googleplus {
+  background-color: #db4439;
+}
+.main-dashboard-page .container .links .social-graph-wrapper.widget-twitter {
+  background-color: #1da1f2;
+}
+.main-dashboard-page .container .links .social-graph-wrapper .s-icon {
+  font-size: 2.1875rem;
+  position: relative;
+  top: 0.625rem;
+  padding: 0 10px;
+}
+.main-dashboard-page .container .links .social-graph-wrapper {
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  color: #fff;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
 }
 
 * {

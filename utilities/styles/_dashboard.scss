@@ -148,11 +148,6 @@
         &.card-custom {
           background-image: linear-gradient(to left, $bs-indigo, $bs-primary);
         }
-
-        .card-body {
-          // width: 20rem;
-        }
-
         position: relative;
 
         h5 {
@@ -235,10 +230,72 @@
       }
     }
 
-    .activity {
+    .customers-activity {
       border: none;
+
+      // background-color: rgb(10, 16, 22);
+
+      .card {
+        border: none;
+        background-color: rgb(10, 16, 22);
+      }
+
       .card-body {
         background-color: rgb(10, 16, 22);
+        border-radius: 0.5rem;
+
+        img {
+          height: 30px;
+        }
+        table {
+          height: 25rem;
+        }
+
+        tr {
+          color: white;
+        }
+
+        td {
+          img {
+            height: 30px;
+          }
+        }
+      }
+    }
+
+    .links {
+      .card {
+        background-color: rgb(10, 16, 22);
+        color: white;
+      }
+
+      .social-graph-wrapper.widget-facebook {
+        background-color: #3b5998;
+      }
+      .social-graph-wrapper.widget-linkedin {
+        background-color: #007bb6;
+      }
+      .social-graph-wrapper.widget-googleplus {
+        background-color: #db4439;
+      }
+      .social-graph-wrapper.widget-twitter {
+        background-color: #1da1f2;
+      }
+
+      .social-graph-wrapper .s-icon {
+        font-size: 2.1875rem;
+        position: relative;
+        top: 0.625rem;
+        padding: 0 10px;
+      }
+
+      .social-graph-wrapper {
+        text-align: center;
+        padding-bottom: 20px;
+        position: relative;
+        color: #fff;
+        border-top-left-radius: 0.625rem;
+        border-top-right-radius: 0.625rem;
       }
     }
   }
