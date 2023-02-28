@@ -38,3 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // SIDEBAR
 });
+
+// NAVBAR dropdown
+$(".dropdown-toggle").dropdown();
