@@ -6,11 +6,6 @@
 @import "./abstracts/abstracts";
 
 ////////////////////
-// Global/Base
-////////////////////
-@import "./base/reset";
-
-////////////////////
 // Layout
 ////////////////////
 @import "./layout/layout";
@@ -25,33 +20,7 @@
 ////////////////////
 @import "./pages/pages";
 
-// * {
-//   font-family: "Poppins", sans-serif;
-//   text-decoration: none;
-//   list-style: none;
-
-//   &:focus {
-//     outline: none;
-//   }
-// }
-
-// body {
-//   overflow-x: hidden;
-// }
-
-// .form-control:focus,
-// .dropdown-toggle:focus {
-//   border-color: none;
-//   box-shadow: none;
-//   outline: none;
-// }
-
-// .show > .btn-secondary.dropdown-toggle:focus,
-// .show > .btn-secondary.dropdown-toggle:active {
-//   box-shadow: none;
-//   border: none;
-// }
-
-body {
-  background-color: #101820ff;
-}
+////////////////////
+// Global/Base
+////////////////////
+@import "./base/reset";

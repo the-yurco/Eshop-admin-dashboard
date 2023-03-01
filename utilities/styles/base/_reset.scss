@@ -21,24 +21,7 @@ body {
   box-sizing: border-box;
   position: relative;
   max-width: 100%;
-}
-
-#main-wrapper {
-  opacity: 0;
-  transition: all 0.25s ease-in;
-  overflow: hidden;
-  position: relative;
-}
-
-#main-wrapper {
-  &.show {
-    opacity: 1;
-  }
-}
-
-.page-heading {
-  font-size: 1.125rem;
-  color: #333333;
+  background-color: $bg;
 }
 
 a {

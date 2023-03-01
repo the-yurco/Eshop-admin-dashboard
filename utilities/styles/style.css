@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-/* ===== Usage ===== */
 /*
 0 - 600: Phone
 600 - 900: Tablet portrait
@@ -10,86 +9,6 @@
 The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
-* {
-  outline: none;
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
-}
-*::after {
-  margin: 0;
-  padding: 0;
-}
-*::before {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  overflow-x: hidden;
-  height: 100%;
-  box-sizing: border-box;
-  position: relative;
-  max-width: 100%;
-}
-
-#main-wrapper {
-  opacity: 0;
-  transition: all 0.25s ease-in;
-  overflow: hidden;
-  position: relative;
-}
-
-#main-wrapper.show {
-  opacity: 1;
-}
-
-.page-heading {
-  font-size: 1.125rem;
-  color: #333333;
-}
-
-a {
-  transition: all 0.4s ease-in-out;
-}
-
-a:focus,
-a:hover {
-  text-decoration: none;
-}
-
-a.link {
-  color: #c2cbd4;
-}
-
-a.link:focus,
-a.link:hover {
-  color: #00b8d9;
-}
-
-ul {
-  padding: 0;
-}
-
-li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-weight: 500;
-}
-
 .bg-chaorcal-cl {
   background-color: rgb(10, 16, 22);
 }
@@ -289,7 +208,99 @@ h6,
   overflow: hidden;
 }
 
-/* ===== Usage ===== */
+.navbar {
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, #6102dd, #2277ef);
+  background-color: rgb(10, 16, 22);
+  width: 96.1%;
+  float: right;
+  background-color: rgb(10, 16, 22);
+  display: flex;
+  justify-content: space-between;
+}
+.navbar form input,
+.navbar form button {
+  border-radius: 0.2rem;
+}
+.navbar form input {
+  border: none;
+}
+.navbar form input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+.navbar form button {
+  border: 1px solid #2277ef;
+  color: #2277ef;
+  transition: all 0.3s;
+}
+.navbar form button:hover {
+  background-color: #2277ef;
+  color: white;
+  border: 1px solid #2277ef;
+}
+.navbar .header-right {
+  margin: 0 2.3rem;
+  width: 50rem;
+  gap: 1rem;
+}
+.navbar .header-right .profile-admin {
+  height: 2.4rem;
+  width: 2.4rem;
+  border: 2px solid #2277ef;
+  border-radius: 50px;
+}
+.navbar .header-right .profile-admin:hover {
+  cursor: pointer;
+}
+.navbar .header-right .profile-admin img {
+  height: 100%;
+}
+.navbar .header-right .dropdown button {
+  background: transparent;
+  border: none;
+}
+.navbar .header-right .dropdown button:focus, .navbar .header-right .dropdown button:active {
+  box-shadow: none;
+  outline: none;
+  background: transparent;
+  border: none;
+}
+.navbar .header-right .dropdown .dropdown-toggle::after {
+  display: none;
+}
+.navbar .header-right .dropdown .dropdown-menu {
+  width: 15rem;
+  position: absolute;
+  border: 1px solid #101820;
+}
+.navbar .header-right .dropdown .dropdown-menu .dropdown-item {
+  color: #101820;
+  transition: all 0.3s;
+}
+.navbar .header-right .dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: #adb6c7;
+}
+.navbar .header-right .dropdown .dropdown-menu span {
+  display: block;
+  text-align: center;
+}
+.navbar .header-right .dropdown:nth-child(2) .dropdown-menu {
+  width: 5rem;
+  margin: 0 40rem 0 0;
+}
+.navbar .header-right .dropdown:nth-child(3) .dropdown-menu {
+  width: 13rem;
+  left: -5rem;
+}
+.navbar .header-right .dropdown:nth-child(4) .dropdown-menu {
+  width: 13rem;
+  left: -10rem;
+}
+
 /*
 0 - 600: Phone
 600 - 900: Tablet portrait
@@ -300,117 +311,13 @@ h6,
 The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.main-dashboard-page {
-  border: 1px solid;
-  width: 100%;
-  float: right;
-}
-.main-dashboard-page .navbar {
-  border-bottom: 1px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-  border-image-source: linear-gradient(to left, #6102dd, #2277ef);
-  background-color: rgb(10, 16, 22);
-  width: 96.1%;
-  float: right;
-  display: flex;
-  justify-content: space-between;
-}
-.main-dashboard-page .navbar form {
-  display: flex;
-  gap: 1rem;
-}
-.main-dashboard-page .navbar form input,
-.main-dashboard-page .navbar form button {
-  border-radius: 0.2rem;
-}
-.main-dashboard-page .navbar form input {
-  border: none;
-}
-.main-dashboard-page .navbar form input:focus {
-  outline: none;
-  border: none;
-}
-.main-dashboard-page .navbar form button {
-  border: 1px solid #2277ef;
-  color: #2277ef;
-  transition: all 0.3s;
-}
-.main-dashboard-page .navbar form button:hover {
-  background-color: #2277ef;
-  color: white;
-}
-.main-dashboard-page .navbar .header-right {
-  margin: 0 2.5rem;
-  position: relative;
-  right: 0;
-  float: right;
-  width: 50rem;
-  height: 100%;
-  gap: 1rem;
-  padding: 0 1rem;
-}
-.main-dashboard-page .navbar .header-right .profile-admin {
-  height: 2.4rem;
-  width: 2.4rem;
-  border: 3px solid gray;
-  border-radius: 50px;
-}
-.main-dashboard-page .navbar .header-right .profile-admin:hover {
-  cursor: pointer;
-}
-.main-dashboard-page .navbar .header-right .profile-admin img {
-  height: 100%;
-}
-.main-dashboard-page .navbar .header-right .dropdown button {
-  background: transparent;
-  border: none;
-}
-.main-dashboard-page .navbar .header-right .dropdown .dropdown-toggle::after {
-  display: none;
-}
-.main-dashboard-page .navbar .header-right .dropdown .dropdown-menu {
-  width: 15rem;
-  position: absolute;
-}
-.main-dashboard-page .navbar .header-right .dropdown .dropdown-menu span {
-  margin: 0 1rem;
-  text-align: center;
-  position: relative;
-  left: 12px;
-}
-.main-dashboard-page .navbar .header-right .dropdown:nth-child(2) .dropdown-menu {
-  width: 5rem;
-  margin: 0 40rem 0 0;
-}
-.main-dashboard-page .navbar .header-right .dropdown:nth-child(3) .dropdown-menu {
-  width: 13rem;
-  left: -5rem;
-}
-.main-dashboard-page .navbar .header-right .dropdown:nth-child(4) .dropdown-menu {
-  width: 13rem;
-  left: -10rem;
-}
-.main-dashboard-page .container .news {
-  border: none;
-}
 .main-dashboard-page .container .news .card {
   margin: 0 0 25px 0;
   border: none;
-  border-radius: 0.6;
-  position: relative;
+  border-radius: 0.6rem;
 }
 .main-dashboard-page .container .news .card.card-custom {
   background-image: linear-gradient(to left, #6102dd, #2277ef);
-}
-.main-dashboard-page .container .news .card h5 {
-  color: white;
 }
 .main-dashboard-page .container .news .card .card-title {
   font-size: 1.4rem;
@@ -418,8 +325,8 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 .main-dashboard-page .container .news .card .card-subtitle {
   font-weight: 300;
-  background-color: rgb(10, 16, 22);
-  border-radius: 10px;
+  background-color: #101820;
+  border-radius: 0.5rem;
   padding: 0.5rem;
   width: -moz-fit-content;
   width: fit-content;
@@ -433,11 +340,6 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   right: 3rem;
   top: 5rem;
   color: rgba(0, 0, 0, 0.6);
-}
-.main-dashboard-page .container .news .card i:before {
-  display: block;
-  height: 30px;
-  width: 30px;
 }
 .main-dashboard-page .container .graph {
   border: none;
@@ -457,7 +359,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   margin: 0 0 3rem 0;
   border: 1px solid white;
   padding: 7px;
-  border-radius: 50rem;
+  border-radius: 50%;
   text-align: center;
 }
 .main-dashboard-page .container .company-team .card h5 {
@@ -465,9 +367,6 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 .main-dashboard-page .container .company-team .card p {
   font-size: 0.8rem;
-}
-.main-dashboard-page .container .customers-activity {
-  border: none;
 }
 .main-dashboard-page .container .customers-activity .card {
   border: none;
@@ -477,49 +376,37 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   background-color: rgb(10, 16, 22);
   border-radius: 0.5rem;
 }
-.main-dashboard-page .container .customers-activity .card-body img {
-  height: 30px;
-}
-.main-dashboard-page .container .customers-activity .card-body table {
-  text-align: center;
-}
-.main-dashboard-page .container .customers-activity .card-body table a {
-  text-align: start;
-}
-.main-dashboard-page .container .customers-activity .card-body tr {
+.main-dashboard-page .container .customers-activity .card-body table tr {
   color: white;
   height: 4rem;
 }
-.main-dashboard-page .container .customers-activity .card-body td:nth-child(1) {
+.main-dashboard-page .container .customers-activity .card-body table tr td:nth-child(1) {
   width: 10rem;
 }
-.main-dashboard-page .container .customers-activity .card-body td:nth-child(2) {
+.main-dashboard-page .container .customers-activity .card-body table tr td:nth-child(2) {
   width: 22rem;
 }
-.main-dashboard-page .container .customers-activity .card-body td:nth-child(3) {
+.main-dashboard-page .container .customers-activity .card-body table tr td:nth-child(3) {
   width: 10rem;
 }
-.main-dashboard-page .container .customers-activity .card-body td:nth-child(4) {
+.main-dashboard-page .container .customers-activity .card-body table tr td:nth-child(4) {
   width: 13rem;
 }
-.main-dashboard-page .container .customers-activity .card-body td:nth-child(5) {
+.main-dashboard-page .container .customers-activity .card-body table tr td:nth-child(5) {
   width: 12rem;
-}
-.main-dashboard-page .container .customers-activity .card-body td img {
-  height: 30px;
 }
 .main-dashboard-page .container .links .card {
   background-color: rgb(10, 16, 22);
   color: white;
 }
 .main-dashboard-page .container .links .social-graph-wrapper.widget-facebook {
-  background-color: #3b5998;
+  background-color: rgb(59, 89, 152);
 }
 .main-dashboard-page .container .links .social-graph-wrapper.widget-linkedin {
   background-color: #007bb6;
 }
 .main-dashboard-page .container .links .social-graph-wrapper.widget-google {
-  background-color: #4285f4;
+  background-color: #ff0000;
 }
 .main-dashboard-page .container .links .social-graph-wrapper.widget-twitter {
   background-color: #1da1f2;
@@ -528,7 +415,6 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   font-size: 2.1875rem;
   position: relative;
   top: 0.625rem;
-  padding: 0 10px;
 }
 .main-dashboard-page .container .links .social-graph-wrapper {
   text-align: center;
@@ -539,6 +425,67 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   border-top-right-radius: 0.625rem;
 }
 
+* {
+  outline: none;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+*::after {
+  margin: 0;
+  padding: 0;
+}
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
   background-color: #101820;
+}
+
+a {
+  transition: all 0.4s ease-in-out;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a.link {
+  color: #c2cbd4;
+}
+
+a.link:focus,
+a.link:hover {
+  color: #00b8d9;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
 }

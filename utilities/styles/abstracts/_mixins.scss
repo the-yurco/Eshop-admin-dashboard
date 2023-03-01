@@ -1,9 +1,6 @@
 //! LINEAR GRADIENT
-@mixin linear-gradiant($bg, $args...) {
-  background: $bg;
-  background: linear-gradient($args);
-  background: -moz-linear-gradient($args);
-  background: -webkit-linear-gradient($args);
+@mixin linear-gradient-main {
+  background-image: linear-gradient(to left, $secondary, $primary);
 }
 //! ---------------------------
 
@@ -16,9 +13,41 @@
 }
 //! ---------------------------
 
+@mixin transition {
+  transition: all 0.3s;
+}
+
 //! BORDER
 @mixin border($size, $color) {
   border: $size solid $color;
+}
+
+@mixin border-b($size, $color) {
+  border-bottom: $size solid $color;
+}
+
+@mixin border-t($size, $color) {
+  border-top: $size solid $color;
+}
+
+@mixin border-main-b {
+  border-bottom: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, $secondary, $primary);
+  background-color: rgb(10, 16, 22);
+}
+
+@mixin border-main {
+  border: 2px solid;
+  border-image-slice: 1;
+  border-width: 2px;
+  border-image-source: linear-gradient(to left, $secondary, $primary);
+  background-color: rgb(10, 16, 22);
+}
+
+@mixin border-radius-circle {
+  border-radius: 50%;
 }
 //! ---------------------------
 
@@ -66,32 +95,6 @@
   display: flex;
   justify-content: center;
 }
-
-// //? Font Toolkit:
-// @mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
-//   font-size: $font-size * 0.1rem;
-
-//   @if $line-height==normal {
-//     line-height: normal;
-//   } @else {
-//     line-height: $line-height / $font-size;
-//   }
-
-//   @if $letter-spacing==normal {
-//     letter-spacing: normal;
-//   } @else {
-//     letter-spacing: #{$letter-spacing / $font-size}em;
-//   }
-// }
-
-/* ===== Usage ===== */
-// p {
-//   @include font-size(12, 18, 1.2);
-//   // returns
-//   font-size: 12px;
-//   line-height: 1.5; // 18 / 12
-//   letter-spacing: 0.1em;
-// }
 
 //! ABSOLUTE POSITIONING
 @mixin abs-pos($top: auto, $right: auto, $bottom: auto, $left: auto) {
