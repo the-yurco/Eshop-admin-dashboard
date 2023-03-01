@@ -1,6 +1,14 @@
 // Color Variable
-// $secondary: #673BB7;
-// $info: #00a2ff;
+$primary: #6e00ff !default;
+$secondary: #c0c2c3 !default;
+$success: #36b37e !default;
+$danger: #ff5630 !default;
+$warning: #ffab00 !default;
+$info: #00b8d9 !default;
+$light: #fbfbfb !default;
+$dark: #4a4a4a !default;
+
+// ----------------------
 $dark: #464a53;
 $light: #aaa;
 $border: #dee2e6;
@@ -46,22 +54,14 @@ $facebook: rgb(59, 89, 152);
 $twitter: #1da1f2;
 $youtube: #ff0000;
 $google-plus: #db4439;
-$iron: #dddfe1;
 $linkedin: #007bb6;
 $instagram: #c32aa3;
 $pinterest: #bd081c;
 $google: #4285f4;
-$snapchat: #fffc00;
-$whatsapp: #25d366;
-$tumblr: #35465d;
 $reddit: #ff4500;
 $spotify: #1ed760;
-$yahoo: #430297;
-$dribbble: #ea4c89;
 $skype: #00aff0;
 $quora: #aa2200;
-$riverBed: #4c585c;
-$vimeo: #1ab7ea;
 
 ///////////////////
 // Material Color
@@ -134,7 +134,6 @@ $silver: #cccccc;
 $woodsmoke: #171820;
 
 //color for coller pallate
-
 $color_pallate_1: $primary;
 $color_pallate_2: #27394f;
 $color_pallate_3: #6a1b9a;

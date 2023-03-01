@@ -1,4 +1,5 @@
-@import "./variables";
+@import "../abstracts/variables";
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +19,11 @@
     border-bottom: 1px solid;
     border-image-slice: 1;
     border-width: 2px;
-    border-image-source: linear-gradient(to left, $bs-indigo, $bs-primary);
+    border-image-source: linear-gradient(
+      to left,
+      $electric-violet,
+      $dodger-blue
+    );
     background-color: rgb(10, 16, 22);
     width: 96.1%;
     float: right;
@@ -47,13 +52,13 @@
       }
 
       button {
-        border: 1px solid $bs-primary;
-        color: $bs-primary;
+        border: 1px solid $dodger-blue;
+        color: $dodger-blue;
         transition: all 0.3s;
 
         &:hover {
           // border: none;
-          background-color: $bs-primary;
+          background-color: $dodger-blue;
           color: white;
         }
       }
@@ -146,7 +151,11 @@
         border: none;
         border-radius: 0.6;
         &.card-custom {
-          background-image: linear-gradient(to left, $bs-indigo, $bs-primary);
+          background-image: linear-gradient(
+            to left,
+            $electric-violet,
+            $dodger-blue
+          );
         }
         position: relative;
 
@@ -208,7 +217,7 @@
         // border: 1px solid;
         // border-image-slice: 1;
         // // border-width: 2px;
-        // border-image-source: linear-gradient(to left, $bs-indigo, $bs-primary);
+        // border-image-source: linear-gradient(to left, $electric-violet, $dodger-blue);
         // background-color: rgb(10, 16, 22);
         // border-radius: 1rem;
         // width: 18rem;

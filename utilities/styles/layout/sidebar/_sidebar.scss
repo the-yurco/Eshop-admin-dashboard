@@ -1,4 +1,3 @@
-@import "./variables";
 // @import "./style.scss";
 .bg-chaorcal-cl {
   background-color: rgb(10, 16, 22);
@@ -6,7 +5,7 @@
 
 .text-yellow,
 .text-yellow:hover {
-  color: $bs-primary;
+  color: $dodger-blue;
 }
 
 @keyframes growDown {
@@ -165,8 +164,8 @@
       linear,
       left bottom,
       left top,
-      color-stop(0.5, $bs-indigo),
-      color-stop(1, $bs-primary)
+      color-stop(0.5, $electric-violet),
+      color-stop(1, $dodger-blue)
     );
     transition: all 1s;
     border-radius: 10px;
@@ -178,7 +177,7 @@
     transition: all 0.3s;
 
     &:hover {
-      color: $bs-primary;
+      color: $dodger-blue;
     }
   }
 
@@ -189,8 +188,8 @@
       &.focused > a {
         background-image: linear-gradient(
           to bottom right,
-          $bs-cyan,
-          $bs-indigo
+          $dodger-blue,
+          $electric-violet
         );
         color: #101820ff;
         border-radius: 5rem;
@@ -200,7 +199,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        color: $bs-primary;
+        color: $dodger-blue;
         padding: 0.75rem 0.75rem;
         transition: all 0.3s;
         border-radius: 0.3rem;
@@ -234,8 +233,8 @@
       &.active a {
         background-image: linear-gradient(
           to bottom right,
-          $bs-cyan,
-          $bs-indigo
+          $dodger-blue,
+          $electric-violet
         );
         color: #101820ff;
       }
@@ -247,7 +246,7 @@
 
     hr {
       height: 2px;
-      background-image: linear-gradient($bs-cyan, $bs-indigo);
+      background-image: linear-gradient($dodger-blue, $electric-violet);
     }
 
     .sidebar-dropdown-menu {

@@ -1,11 +1,101 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/*
+0 - 600: Phone
+600 - 900: Tablet portrait
+900 - 1200: Tablet landscape
+1200 - 1800: Normal styles
+1800+ : Big Desktop
+1em = 16px
+The smaller device rules always should write below the bigger device rules
+Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
+*/
+* {
+  outline: none;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+*::after {
+  margin: 0;
+  padding: 0;
+}
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+}
+
+#main-wrapper {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+  overflow: hidden;
+  position: relative;
+}
+
+#main-wrapper.show {
+  opacity: 1;
+}
+
+.page-heading {
+  font-size: 1.125rem;
+  color: #333333;
+}
+
+a {
+  transition: all 0.4s ease-in-out;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a.link {
+  color: #464a53;
+}
+
+a.link:focus,
+a.link:hover {
+  color: #00b8d9;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+}
+
 .bg-chaorcal-cl {
   background-color: rgb(10, 16, 22);
 }
 
 .text-yellow,
 .text-yellow:hover {
-  color: #0d6efd;
+  color: #2277ef;
 }
 
 @keyframes growDown {
@@ -116,7 +206,7 @@
   transition: all 1s;
 }
 .sidebar::-webkit-scrollbar-thumb {
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #6610f2), color-stop(1, #0d6efd));
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #6102dd), color-stop(1, #2277ef));
   -webkit-transition: all 1s;
   transition: all 1s;
   border-radius: 10px;
@@ -127,13 +217,13 @@
   transition: all 0.3s;
 }
 .sidebar .sidebar-arrow:hover {
-  color: #0d6efd;
+  color: #2277ef;
 }
 .sidebar .sidebar-menu {
   list-style-type: none;
 }
 .sidebar .sidebar-menu .sidebar-menu-item.focused > a {
-  background-image: linear-gradient(to bottom right, #0dcaf0, #6610f2);
+  background-image: linear-gradient(to bottom right, #2277ef, #6102dd);
   color: #101820;
   border-radius: 5rem;
 }
@@ -141,7 +231,7 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: #0d6efd;
+  color: #2277ef;
   padding: 0.75rem 0.75rem;
   transition: all 0.3s;
   border-radius: 0.3rem;
@@ -164,7 +254,7 @@
   transition: all 0.3s;
 }
 .sidebar .sidebar-menu .sidebar-menu-item.active a {
-  background-image: linear-gradient(to bottom right, #0dcaf0, #6610f2);
+  background-image: linear-gradient(to bottom right, #2277ef, #6102dd);
   color: #101820;
 }
 .sidebar .sidebar-menu .sidebar-menu-item > a {
@@ -172,7 +262,7 @@
 }
 .sidebar .sidebar-menu hr {
   height: 2px;
-  background-image: linear-gradient(#0dcaf0, #6610f2);
+  background-image: linear-gradient(#2277ef, #6102dd);
 }
 .sidebar .sidebar-menu .sidebar-dropdown-menu {
   padding: 0 0 0 2rem;
@@ -213,7 +303,7 @@
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-width: 2px;
-  border-image-source: linear-gradient(to left, #6610f2, #0d6efd);
+  border-image-source: linear-gradient(to left, #6102dd, #2277ef);
   background-color: rgb(10, 16, 22);
   width: 96.1%;
   float: right;
@@ -236,12 +326,12 @@
   border: none;
 }
 .main-dashboard-page .navbar form button {
-  border: 1px solid #0d6efd;
-  color: #0d6efd;
+  border: 1px solid #2277ef;
+  color: #2277ef;
   transition: all 0.3s;
 }
 .main-dashboard-page .navbar form button:hover {
-  background-color: #0d6efd;
+  background-color: #2277ef;
   color: white;
 }
 .main-dashboard-page .navbar .header-right {
@@ -305,7 +395,7 @@
   position: relative;
 }
 .main-dashboard-page .container .news .card.card-custom {
-  background-image: linear-gradient(to left, #6610f2, #0d6efd);
+  background-image: linear-gradient(to left, #6102dd, #2277ef);
 }
 .main-dashboard-page .container .news .card h5 {
   color: white;
@@ -416,32 +506,6 @@
   color: #fff;
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
-}
-
-* {
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  list-style: none;
-}
-*:focus {
-  outline: none;
-}
-
-body {
-  overflow-x: hidden;
-}
-
-.form-control:focus,
-.dropdown-toggle:focus {
-  border-color: none;
-  box-shadow: none;
-  outline: none;
-}
-
-.show > .btn-secondary.dropdown-toggle:focus,
-.show > .btn-secondary.dropdown-toggle:active {
-  box-shadow: none;
-  border: none;
 }
 
 body {
