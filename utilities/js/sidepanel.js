@@ -15,19 +15,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
       var menuItem = this.parentNode;
 
-      if (!menuItem.classList.contains("focused")) {
-        var parent = menuItem.parentNode;
-        var dropdownMenus = parent.querySelectorAll(".sidebar-dropdown-menu");
-        var dropdownItems = parent.querySelectorAll(".has-dropdown");
+      // if (!menuItem.classList.contains("focused")) {
+      //   var parent = menuItem.parentNode;
+      //   var dropdownMenus = parent.querySelectorAll(".sidebar-dropdown-menu");
+      //   var dropdownItems = parent.querySelectorAll(".has-dropdown");
 
-        for (var j = 0; j < dropdownMenus.length; j++) {
-          dropdownMenus[j].style.display = "none";
-        }
+      //   for (var j = 0; j < dropdownMenus.length; j++) {
+      //     dropdownMenus[j].style.display = "none";
+      //   }
 
-        for (var j = 0; j < dropdownItems.length; j++) {
-          dropdownItems[j].classList.remove("focused");
-        }
-      }
+      //   for (var j = 0; j < dropdownItems.length; j++) {
+      //     dropdownItems[j].classList.remove("focused");
+      //   }
+      // }
 
       var dropdownMenu = this.nextElementSibling;
       dropdownMenu.style.display =
