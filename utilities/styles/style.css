@@ -1,14 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* ===== Usage ===== */
-p {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  letter-spacing: 0.1em;
-  font-size: 12px;
-  line-height: 1.5;
-  letter-spacing: 0.1em;
-}
-
 /*
 0 - 600: Phone
 600 - 900: Tablet portrait
@@ -298,6 +289,17 @@ h6,
   overflow: hidden;
 }
 
+/* ===== Usage ===== */
+/*
+0 - 600: Phone
+600 - 900: Tablet portrait
+900 - 1200: Tablet landscape
+1200 - 1800: Normal styles
+1800+ : Big Desktop
+1em = 16px
+The smaller device rules always should write below the bigger device rules
+Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
+*/
 * {
   margin: 0;
   padding: 0;
@@ -479,10 +481,29 @@ h6,
   height: 30px;
 }
 .main-dashboard-page .container .customers-activity .card-body table {
-  height: 25rem;
+  text-align: center;
+}
+.main-dashboard-page .container .customers-activity .card-body table a {
+  text-align: start;
 }
 .main-dashboard-page .container .customers-activity .card-body tr {
   color: white;
+  height: 4rem;
+}
+.main-dashboard-page .container .customers-activity .card-body td:nth-child(1) {
+  width: 10rem;
+}
+.main-dashboard-page .container .customers-activity .card-body td:nth-child(2) {
+  width: 22rem;
+}
+.main-dashboard-page .container .customers-activity .card-body td:nth-child(3) {
+  width: 10rem;
+}
+.main-dashboard-page .container .customers-activity .card-body td:nth-child(4) {
+  width: 13rem;
+}
+.main-dashboard-page .container .customers-activity .card-body td:nth-child(5) {
+  width: 12rem;
 }
 .main-dashboard-page .container .customers-activity .card-body td img {
   height: 30px;
@@ -497,8 +518,8 @@ h6,
 .main-dashboard-page .container .links .social-graph-wrapper.widget-linkedin {
   background-color: #007bb6;
 }
-.main-dashboard-page .container .links .social-graph-wrapper.widget-googleplus {
-  background-color: #db4439;
+.main-dashboard-page .container .links .social-graph-wrapper.widget-google {
+  background-color: #4285f4;
 }
 .main-dashboard-page .container .links .social-graph-wrapper.widget-twitter {
   background-color: #1da1f2;
