@@ -19,11 +19,7 @@
     border-bottom: 1px solid;
     border-image-slice: 1;
     border-width: 2px;
-    border-image-source: linear-gradient(
-      to left,
-      $electric-violet,
-      $dodger-blue
-    );
+    border-image-source: linear-gradient(to left, $secondary, $primary);
     background-color: rgb(10, 16, 22);
     width: 96.1%;
     float: right;
@@ -52,13 +48,13 @@
       }
 
       button {
-        border: 1px solid $dodger-blue;
-        color: $dodger-blue;
+        border: 1px solid $primary;
+        color: $primary;
         transition: all 0.3s;
 
         &:hover {
           // border: none;
-          background-color: $dodger-blue;
+          background-color: $primary;
           color: white;
         }
       }
@@ -151,11 +147,7 @@
         border: none;
         border-radius: 0.6;
         &.card-custom {
-          background-image: linear-gradient(
-            to left,
-            $electric-violet,
-            $dodger-blue
-          );
+          background-image: linear-gradient(to left, $secondary, $primary);
         }
         position: relative;
 
@@ -217,7 +209,7 @@
         // border: 1px solid;
         // border-image-slice: 1;
         // // border-width: 2px;
-        // border-image-source: linear-gradient(to left, $electric-violet, $dodger-blue);
+        // border-image-source: linear-gradient(to left, $secondary, $primary);
         // background-color: rgb(10, 16, 22);
         // border-radius: 1rem;
         // width: 18rem;

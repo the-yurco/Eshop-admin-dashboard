@@ -5,7 +5,7 @@
 
 .text-yellow,
 .text-yellow:hover {
-  color: $dodger-blue;
+  color: $primary;
 }
 
 @keyframes growDown {
@@ -164,8 +164,8 @@
       linear,
       left bottom,
       left top,
-      color-stop(0.5, $electric-violet),
-      color-stop(1, $dodger-blue)
+      color-stop(0.5, $secondary),
+      color-stop(1, $primary)
     );
     transition: all 1s;
     border-radius: 10px;
@@ -177,7 +177,7 @@
     transition: all 0.3s;
 
     &:hover {
-      color: $dodger-blue;
+      color: $primary;
     }
   }
 
@@ -188,8 +188,8 @@
       &.focused > a {
         background-image: linear-gradient(
           to bottom right,
-          $dodger-blue,
-          $electric-violet
+          $primary,
+          $secondary
         );
         color: #101820ff;
         border-radius: 5rem;
@@ -199,7 +199,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        color: $dodger-blue;
+        color: $primary;
         padding: 0.75rem 0.75rem;
         transition: all 0.3s;
         border-radius: 0.3rem;
@@ -233,8 +233,8 @@
       &.active a {
         background-image: linear-gradient(
           to bottom right,
-          $dodger-blue,
-          $electric-violet
+          $primary,
+          $secondary
         );
         color: #101820ff;
       }
@@ -246,7 +246,7 @@
 
     hr {
       height: 2px;
-      background-image: linear-gradient($dodger-blue, $electric-violet);
+      background-image: linear-gradient($primary, $secondary);
     }
 
     .sidebar-dropdown-menu {
