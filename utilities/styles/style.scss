@@ -1,7 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@import "./variables";
-@import "./sidebar";
-@import "./dashboard";
+// @import "./variables";
+// @import "./sidebar";
+// @import "./dashboard";
+
+////////////////////
+// Abstracts
+////////////////////
+@import "./abstracts/abstracts";
+
+////////////////////
+// Global/Base
+////////////////////
+@import "./base/base";
+
+////////////////////
+// Layout
+////////////////////
+@import "./layout/layout";
+
+////////////////////
+// Components
+////////////////////
+@import "./components/components";
+
+////////////////////
+// Pages
+////////////////////
+@import "./pages/pages";
 
 * {
   font-family: "Poppins", sans-serif;

@@ -1,0 +1,179 @@
+// $bs-blue: #0d6efd;
+// $bs-indigo: #6610f2;
+// $bs-purple: #6f42c1;
+// $bs-pink: #d63384;
+// $bs-red: #dc3545;
+// $bs-orange: #fd7e14;
+// $bs-yellow: #ffc107;
+// $bs-green: #198754;
+// $bs-teal: #20c997;
+// $bs-cyan: #0dcaf0;
+// $bs-white: #fff;
+// $bs-gray: #6c757d;
+// $bs-gray-dark: #343a40;
+// $bs-primary: #0d6efd;
+// $bs-secondary: #6c757d;
+// $bs-success: #198754;
+// $bs-info: #0dcaf0;
+// $bs-warning: #ffc107;
+// $bs-danger: #dc3545;
+// $bs-light: #f8f9fa;
+// $bs-dark: #212529;
+// $bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+//   "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+//   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+// $bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+//   "Courier New", monospace;
+// $bs-gradient: linear-gradient(
+//   180deg,
+//   rgba(255, 255, 255, 0.15),
+//   rgba(255, 255, 255, 0)
+// );
+
+// Color Variable
+// $secondary: #673BB7;
+// $info: #00a2ff;
+$dark: #464a53;
+$light: #aaa;
+$border: #dee2e6;
+$inverse: #2f3d4a;
+$ceriseRed: #f54372;
+$light-2: #f9fafc;
+$scooter: #36b9d8;
+$carnation: #f6514c;
+$apple: #449036;
+$cardinal: #ce2b23;
+$royal-blue: #3375e1;
+
+///////////////
+// Solid Color
+///////////////
+$white: #fff;
+$black: #000;
+$charade: #23252f;
+$muted: #8898aa;
+
+/////////////////////////
+// Dark Version Color
+/////////////////////////
+$d-ctd: #ddd;
+$d-ctl: #abafb3;
+$d-border: rgba(120, 130, 140, 0.13);
+$d-bg: #162336;
+$d-card: #27394f;
+
+////////////////////////
+// Light Version Color
+////////////////////////
+$l-ctd: #464a53;
+$l-ctl: #abafb3;
+$l-border: rgba(120, 130, 140, 0.13);
+$l-bg: #f7fafc;
+$heading: #333;
+
+/////////////
+// Social
+/////////////
+$facebook: rgb(59, 89, 152);
+$twitter: #1da1f2;
+$youtube: #ff0000;
+$google-plus: #db4439;
+$iron: #dddfe1;
+$linkedin: #007bb6;
+$instagram: #c32aa3;
+$pinterest: #bd081c;
+$google: #4285f4;
+$snapchat: #fffc00;
+$whatsapp: #25d366;
+$tumblr: #35465d;
+$reddit: #ff4500;
+$spotify: #1ed760;
+$yahoo: #430297;
+$dribbble: #ea4c89;
+$skype: #00aff0;
+$quora: #aa2200;
+$riverBed: #4c585c;
+$vimeo: #1ab7ea;
+
+///////////////////
+// Material Color
+///////////////////
+$athensGray: #f0f0f2;
+$alabaster: #fbfbfb;
+$buttercup: #f19d14;
+$buddha-gold: #a39e06;
+$candlelight: #fad00b;
+$chelesa-cucumber: #6dae4e;
+$blue-dark: #4501eb;
+$dodger-blue: #2277ef;
+$big-stone: #152037;
+$emerlad: #3ccf48;
+$red: #ff0000;
+$purple: #7c277d;
+$pink: #e91e63;
+$deep-pink: #fe60ad;
+$deep-purple: #664ce1;
+$dusty-gray: #999999;
+$flamingo: #f15520;
+$fuchsia-blue: #835dc4;
+$indigo: #3f51b5;
+$monza: #de0903;
+$corn: #deb805;
+$cosmos: #ffdcdc;
+$cadet-blue: #adb6c7;
+$electric-violet: #6102dd;
+$light-blue: #5c97e6;
+$malachite: #24cf48;
+$pale-sky: #6a707e;
+$pelorous: #3aa6b4;
+$purple-pizzazz: #dd04cc;
+$picton-blue: #44daf4;
+$cyan: #00bcd4;
+$cinnabar: #e45444;
+$curious-blue: #3885d8;
+$teal: #39cccc;
+$turquoise: #46eead;
+$violetRed: #f13c79;
+$valencia: #d53845;
+$green: #26da87;
+$gallery: #eeeeee;
+$gray: #898989;
+$gossip: #d0fabb;
+$kimberly: #73629b;
+$light-green: #43e794;
+$hawkes-blue: #d2ebfc;
+$lime: #cddc39;
+$yellow: #ffb22b;
+$amber: #ffc107;
+$orange: #f7941d;
+$razzmatazz: #f31e7a;
+$deep-orange: #d08021;
+$maroon: #8c1919;
+$emperor: #555555;
+$mirage: #121929;
+$grey: #d2d6de;
+$navy: #102d4b;
+$blue-grey: #607d8b;
+$brown: #795548;
+$cloud: #aae8ff;
+$sunshine: #ffbe26;
+$seance: #752da1;
+$sky: #2290ff;
+$scooter: #36b8d7;
+$shark: #24282d;
+$sun: #f7ab10;
+$silver: #cccccc;
+$woodsmoke: #171820;
+
+//color for coller pallate
+
+$color_pallate_1: $primary;
+$color_pallate_2: #27394f;
+$color_pallate_3: #6a1b9a;
+$color_pallate_4: #4527a0;
+$color_pallate_5: #c62828;
+$color_pallate_6: #283593;
+$color_pallate_7: #1565c0;
+$color_pallate_8: #0277bd;
+$color_pallate_9: #00838f;
+$color_pallate_10: #558b2f;

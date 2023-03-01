@@ -1,0 +1,96 @@
+* {
+  outline: none;
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+
+  &::after {
+    margin: 0;
+    padding: 0;
+  }
+
+  &::before {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+// html {
+//     font-size: 62.5%;
+
+//     @include respond('tab-land') {
+//         font-size: 56.25%;
+//     }
+
+//     @include respond('tab-port') {
+//         font-size: 50%;
+//     }
+// }
+
+body {
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  max-width: 100%;
+}
+
+#main-wrapper {
+  opacity: 0;
+  transition: all 0.25s ease-in;
+  overflow: hidden;
+  position: relative;
+}
+
+#main-wrapper {
+  &.show {
+    opacity: 1;
+  }
+}
+
+.page-heading {
+  font-size: 1.125rem;
+  color: #333333;
+}
+
+a {
+  transition: all 0.4s ease-in-out;
+  color: $body-color;
+}
+
+a:focus,
+a:hover {
+  text-decoration: none;
+}
+
+a.link {
+  color: $l-ctd;
+}
+
+a.link:focus,
+a.link:hover {
+  color: $info;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-weight: 500;
+}
