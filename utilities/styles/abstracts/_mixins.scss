@@ -1,62 +1,108 @@
+//! LINEAR GRADIENT
 @mixin linear-gradiant($bg, $args...) {
   background: $bg;
   background: linear-gradient($args);
   background: -moz-linear-gradient($args);
   background: -webkit-linear-gradient($args);
 }
+//! ---------------------------
 
-@mixin radial-gradiant($bg, $args...) {
-  background: $bg;
-  background: radial-gradient($args);
-  background: -moz-radial-gradient($args);
-  background: -webkit-radial-gradient($args);
-}
-
+//! BORDER RADIUS
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
+//! ---------------------------
 
+//! BORDER
 @mixin border($size, $color) {
   border: $size solid $color;
 }
+//! ---------------------------
 
-@mixin circle($height, $radious, $bg: transparent) {
-  height: $height;
-  width: $height;
-  border-radius: $radious;
-  background-color: $bg;
-}
-
+//! BACKGRUND IMAGE CENTER
 @mixin center-bg-img($url) {
   background-image: url($url);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
+//! ---------------------------
 
+//! BOX SHADOW
 @mixin box-shadow($args...) {
   box-shadow: $args;
 }
+//! ---------------------------
 
-@mixin before-after(
-  $left,
-  $top,
-  $width,
-  $height,
-  $content: "",
-  $bg: transparent
-) {
-  position: absolute;
-  content: "#{$content}";
-  left: $left;
-  top: $top;
-  width: $width;
-  height: $height;
-  background-color: $bg;
+//? Flexbox Toolkit:
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
 }
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-vert {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-center-horiz {
+  display: flex;
+  justify-content: center;
+}
+
+//? Font Toolkit:
+@mixin font-size($font-size, $line-height: normal, $letter-spacing: normal) {
+  font-size: $font-size * 0.1rem;
+
+  @if $line-height==normal {
+    line-height: normal;
+  } @else {
+    line-height: $line-height / $font-size;
+  }
+
+  @if $letter-spacing==normal {
+    letter-spacing: normal;
+  } @else {
+    letter-spacing: #{$letter-spacing / $font-size}em;
+  }
+}
+
+/* ===== Usage ===== */
+p {
+  @include font-size(12, 18, 1.2);
+  // returns
+  font-size: 12px;
+  line-height: 1.5; // 18 / 12
+  letter-spacing: 0.1em;
+}
+
+//! ABSOLUTE POSITIONING
+@mixin abs-pos($top: auto, $right: auto, $bottom: auto, $left: auto) {
+  top: $top;
+  right: $right;
+  bottom: $bottom;
+  left: $left;
+  position: absolute;
+}
+
+//! --------------------
 
 //MEDIA QUERY MANAGER
 
@@ -129,7 +175,3 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
     }
   }
 }
-
-// @include custommq($min: 300px) {
-
-// }
