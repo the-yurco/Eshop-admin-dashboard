@@ -23,14 +23,14 @@
 <body>
   <!-- ? SIDEBAR | start -->
   <?php
-  include("./html/layout/sidebar.php");
+  include("./php/layout/sidebar.php");
   ?>
   <!--? SIDEBAR | end -->
 
   <!--? MAIN | start  -->
   <div class="main-dashboard-page">
     <?php
-    include("./html/layout/navbar.php");
+    include("./php/layout/navbar.php");
     ?>
 
     <div class="container">
