@@ -413,6 +413,7 @@
   <!-- start: JS -->
   <script src="../bootstrap/js/bootstrap.min.js"></script>
   <script src="../bootstrap/js/jquery.min.js"></script>
+
   <script src="../utilities/js/index.js"></script>
   <script src="./utilities/js/sidepanel.js"></script>
   <script src="./utilities/js/settings.js"></script>
