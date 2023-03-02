@@ -9,15 +9,6 @@
 The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
-.bg-chaorcal-cl {
-  background-color: rgb(10, 16, 22);
-}
-
-.text-yellow,
-.text-yellow:hover {
-  color: #2277ef;
-}
-
 @keyframes growDown {
   0% {
     opacity: 0;
@@ -33,6 +24,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   width: 22rem;
   overflow-y: scroll;
   transition: 0.2s;
+  background-color: rgb(10, 16, 22);
 }
 .sidebar.collapsed {
   width: 4.7rem;
@@ -58,26 +50,14 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 }
 .sidebar.collapsed .admin_text a {
   display: none;
-  inline-size: 15rem;
   overflow: hidden;
+  color: #2277ef;
 }
 .sidebar.collapsed .sidebar-menu li:nth-child(3) a i {
   position: relative;
   right: 2px;
 }
-.sidebar.collapsed .sidebar-menu li:nth-child(4) a i {
-  position: relative;
-  right: 1px;
-}
-.sidebar.collapsed .sidebar-menu li:nth-child(6) a i {
-  position: relative;
-  right: 1px;
-}
-.sidebar.collapsed .sidebar-menu li:nth-child(7) a i {
-  position: relative;
-  right: 1px;
-}
-.sidebar.collapsed .sidebar-menu li:nth-child(9) a i {
+.sidebar.collapsed .sidebar-menu li:nth-child(4), .sidebar.collapsed .sidebar-menu li:nth-child(6), .sidebar.collapsed .sidebar-menu li:nth-child(7), .sidebar.collapsed .sidebar-menu li:nth-child(9) a i {
   position: relative;
   right: 1px;
 }
@@ -94,33 +74,22 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   width: 2rem;
   padding: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
-  justify-self: center;
-  align-self: center;
+  justify-content: center;
 }
 .sidebar.collapsed .sidebar-menu li ul li a {
   inline-size: 18rem;
   position: relative;
   right: 2rem;
 }
-.sidebar.collapsed:hover .sidebar-arrow {
-  margin-left: auto;
-  margin-right: 0;
-}
-.sidebar.collapsed .sidebar-arrow {
-  margin: 0 auto;
-  transition: 0.2s;
-}
 .sidebar::-webkit-scrollbar {
-  background-color: rgb(11, 18, 24);
+  background-color: rgb(10, 16, 22);
   width: 8px;
   border-radius: 10px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
 .sidebar::-webkit-scrollbar-track {
-  border-radius: 10px;
   box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.05);
   -webkit-transition: all 1s;
   transition: all 1s;
@@ -131,21 +100,16 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   transition: all 1s;
   border-radius: 10px;
 }
-.sidebar .sidebar-arrow {
-  color: rgb(226, 226, 226);
-  cursor: pointer;
-  transition: all 0.3s;
-}
-.sidebar .sidebar-arrow:hover {
-  color: #2277ef;
-}
 .sidebar .sidebar-menu {
   list-style-type: none;
 }
+.sidebar .sidebar-menu .sidebar-menu-item:hover a {
+  border-radius: 0.3rem;
+}
 .sidebar .sidebar-menu .sidebar-menu-item.focused > a {
   background-image: linear-gradient(to bottom right, #2277ef, #6102dd);
-  color: #101820;
-  border-radius: 5rem;
+  color: rgb(10, 16, 22);
+  border-radius: 0.3rem;
 }
 .sidebar .sidebar-menu .sidebar-menu-item a {
   text-decoration: none;
@@ -153,8 +117,6 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   align-items: center;
   color: #2277ef;
   padding: 0.75rem 0.75rem;
-  transition: all 0.3s;
-  border-radius: 0.3rem;
   margin: 0.5rem 0;
 }
 .sidebar .sidebar-menu .sidebar-menu-item a:hover {
@@ -170,12 +132,13 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   transform: rotateZ(270deg);
 }
 .sidebar .sidebar-menu .sidebar-menu-item .focused > a {
-  color: #101820;
+  color: rgb(10, 16, 22);
   transition: all 0.3s;
 }
 .sidebar .sidebar-menu .sidebar-menu-item.active a {
   background-image: linear-gradient(to bottom right, #2277ef, #6102dd);
-  color: #101820;
+  color: rgb(10, 16, 22);
+  border-radius: 0.3rem;
 }
 .sidebar .sidebar-menu .sidebar-menu-item > a {
   overflow: hidden;
@@ -201,11 +164,6 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .sidebar .sidebar-menu .sidebar-menu-item.focused > a .right-arrow {
   transform: rotateZ(360deg);
   transition: ease-in-out all 0.15s;
-}
-.sidebar.collapsed.admin_text.sidebar-logo {
-  display: none;
-  inline-size: 1000px;
-  overflow: hidden;
 }
 
 .navbar {
@@ -301,6 +259,17 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   left: -10rem;
 }
 
+footer {
+  border-radius: 0.3rem;
+  background-color: rgb(10, 16, 22);
+  color: white;
+}
+footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /*
 0 - 600: Phone
 600 - 900: Tablet portrait
@@ -311,6 +280,9 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 The smaller device rules always should write below the bigger device rules
 Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Component
 */
+.main-dashboard-page .container {
+  padding: 0 0 0 4%;
+}
 .main-dashboard-page .container .news .card {
   margin: 0 0 25px 0;
   border: none;
@@ -421,8 +393,8 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
   padding-bottom: 20px;
   position: relative;
   color: #fff;
-  border-top-left-radius: 0.625rem;
-  border-top-right-radius: 0.625rem;
+  border-top-left-radius: 0.3rem;
+  border-top-right-radius: 0.3rem;
 }
 
 * {

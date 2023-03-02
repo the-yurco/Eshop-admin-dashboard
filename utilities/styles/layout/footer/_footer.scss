@@ -1,0 +1,8 @@
+footer {
+  @include border-radius(0.3rem);
+  background-color: $dark-bg;
+  color: white;
+  .container {
+    @include flex-center;
+  }
+}
