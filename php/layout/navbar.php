@@ -1,4 +1,4 @@
-<?php 
+<?php
 echo <<<TEXT
 <div class="navbar navbar-expand-sm">
       <form class="form-inline my-2 my-lg-0 d-flex flex-nowrap px-5 py-2">

@@ -29,6 +29,7 @@
 
   <!--? MAIN | start  -->
   <div class="main-dashboard-page">
+
     <?php
     include("./php/layout/navbar.php");
     ?>

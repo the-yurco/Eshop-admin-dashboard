@@ -37,7 +37,7 @@ echo <<<TEXT
         <!--* DROPDOWN -->
         <ul class="sidebar-dropdown-menu">
           <li class="sidebar-dropdown-menu-item">
-            <a href="/html/ProductManagement/add-product.php">
+            <a href="../ProductManagement/edit-product.php">
               <i class="fa-solid fa-cart-plus menu-item-icon"></i>
               Add Product
             </a>

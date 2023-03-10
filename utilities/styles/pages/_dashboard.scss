@@ -8,7 +8,7 @@
       .card {
         margin: 0 0 25px 0;
         border: none;
-        @include border-radius(0.6rem);
+        @include border-radius(0.3rem);
 
         &.card-custom {
           @include linear-gradient-main;

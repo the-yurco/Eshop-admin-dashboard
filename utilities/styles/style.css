@@ -286,7 +286,7 @@ Fixing Order => Base + Typography >> General Layout + Grid >> Page Layout + Comp
 .main-dashboard-page .container .news .card {
   margin: 0 0 25px 0;
   border: none;
-  border-radius: 0.6rem;
+  border-radius: 0.3rem;
 }
 .main-dashboard-page .container .news .card.card-custom {
   background-image: linear-gradient(to left, #6102dd, #2277ef);
